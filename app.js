@@ -93,8 +93,8 @@ function checkForMatch() {
         score = score+1;
         consoleMessage = 'คุณจับคู่หัวชาร์จได้ถูกต้อง'
     }else{
-        cards[selectedCardOne].setAttribute('src','back.png');
-        cards[selectedCardTwo].setAttribute('src','back.png');
+        cards[selectedCardOne].setAttribute('src','<img src="https://sv1.picz.in.th/images/2021/06/05/Pe1BXE.png" alt="back" border="0">');
+        cards[selectedCardTwo].setAttribute('src','<img src="https://sv1.picz.in.th/images/2021/06/05/Pe1BXE.png" alt="back" border="0">');
         consoleMessage = 'Sorry, try again...'
     }
 
