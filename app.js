@@ -4,34 +4,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const cardArray = [{
     name: "AC1",
-    image: "https://www.picz.in.th/image/Pe1TWS"
+    image: "front_AC1.png"
 },{
     name: "AC1",
-    image: "https://www.picz.in.th/image/Pe1t1n"
+    image: "front_AC1_info.png"
 },{
     name: "AC2",
-    image: "https://www.picz.in.th/image/Pe1wAg"
+    image: "front_AC2.png"
 },{
     name: "AC2",
-    image: "https://www.picz.in.th/image/Pe11eW"
+    image: "front_AC2_info.png"
 },{
     name: "DC1",
-    image: "https://www.picz.in.th/image/Pe1Zk2"
+    image: "front_DC.png"
 },{
     name: "DC1",
-    image: "https://www.picz.in.th/image/Pe1cO1"
+    image: "front_DC_info.png"
 },{
     name: "DC2",
-    image: "https://www.picz.in.th/image/Pe1gXy"
+    image: "front_DC2.png"
 },{
     name: "DC2",
-    image: "https://www.picz.in.th/image/Pe1RzD"
+    image: "front_DC2_info.png"
 },{
     name: "5",
-    image: "https://www.picz.in.th/image/Pe1kRV"
+    image: "front_5.png"
 },{
     name: "5",
-    image: "https://www.picz.in.th/image/Pe136Q"
+    image: "front_5_info.png"
 }];
 
 
@@ -48,7 +48,7 @@ function createGameBoard() {
         let item = document.createElement('div');
         item.className = 'item';
         let card = document.createElement('img');
-        card.setAttribute('src','https://www.picz.in.th/image/Pe1BXE');
+        card.setAttribute('src','back.png');
         card.setAttribute('id',index);
         //card.setAttribute('onclick','flipcard()');
         card.addEventListener('click',flipcard);
@@ -88,13 +88,13 @@ function checkForMatch() {
     let consoleMessage = "";
 
     if(cardChoosen[0].name === cardChoosen[1].name) {
-        cards[selectedCardOne].setAttribute('src','https://www.picz.in.th/image/Pe1hzN');
-        cards[selectedCardTwo].setAttribute('src','https://www.picz.in.th/image/Pe1hzN');
+        cards[selectedCardOne].setAttribute('src','correct.png');
+        cards[selectedCardTwo].setAttribute('src','correct.png');
         score = score+1;
         consoleMessage = 'คุณจับคู่หัวชาร์จได้ถูกต้อง'
     }else{
-        cards[selectedCardOne].setAttribute('src','https://www.picz.in.th/image/Pe1BXE');
-        cards[selectedCardTwo].setAttribute('src','https://www.picz.in.th/image/Pe1BXE');
+        cards[selectedCardOne].setAttribute('src','back.png');
+        cards[selectedCardTwo].setAttribute('src','back.png');
         consoleMessage = 'Sorry, try again...'
     }
 
