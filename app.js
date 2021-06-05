@@ -50,6 +50,7 @@ function createGameBoard() {
         let card = document.createElement('img');
         card.setAttribute('src','back.png');
         card.setAttribute('id',index);
+        card.className='responsive';
         //card.setAttribute('onclick','flipcard()');
         card.addEventListener('click',flipcard);
         item.appendChild(card);

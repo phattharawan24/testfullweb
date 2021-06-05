@@ -9,19 +9,16 @@
     <script src="app.js" type="text/javascript"></script>
 </head>
 <style>
-    @media only screen and (max-width: 480px) {
-        .site-title {
-            font-size: 25px;
-        }
-    }
-
     .body {
         margin: 0px;
         padding: 0px;
         font-family: 'Mitr', sans-serif;
         box-sizing: border-box;
     }
-
+    .responsive {
+    width: 100%;
+    height: auto;
+    }   
     /*รถ*/
     .carrun {
         animation: carrun 10s infinite;
@@ -160,15 +157,6 @@
         justify-content: center;
     }
 </style>
-<style>
-    body .card{
-        background-color: aqua;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-    }
-</style>
     <body>
         <div class="container_cal">
           <div class="boxcal">
@@ -203,16 +191,25 @@
             ทำให้สามารถประหยัดค่าเชื้อเพลิงรถไปได้มากกว่า 3 เท่า</p>
         </div><br>
         <div><img src="https://sv1.picz.in.th/images/2021/05/27/PPHyDt.png" alt="PPHyDt.png" border="0" class="evpic"></div>
-        <div id="divCar" class="container_car"><img src="https://sv1.picz.in.th/images/2021/05/27/PPKInt.png" alt="PPKInt.png"
+        <div id="divCar" class="container_car responsive"><img src="https://sv1.picz.in.th/images/2021/05/27/PPKInt.png" alt="PPKInt.png"
             border="0" class="carrun">
           </div>
         </div>
-        <div class="title">
-            <h1>EV CHARGER GAME</h1>
-            <h2>มาจับคู่หัวชาร์จกับประเภทของหัวชาร์จกัน </h2>
-            <h4>จับคู่หัวชาร์จไปแล้ว <span id='gameScore'>0</span> ประเภท</h4>
-            <h4><span id='gameConsole'>เริ่มกันเลย !!</span></h4>
-        </div>
-        <div id="gameBoard"></div>
+</body>
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        
+    }
+</style>
+<body>
+    <div class="title">
+        <h1>EV CHARGER GAME</h1>
+        <h2>มาจับคู่หัวชาร์จกับประเภทของหัวชาร์จกัน </h2>
+        <h4>จับคู่หัวชาร์จไปแล้ว <span id='gameScore'>0</span> ประเภท</h4>
+        <h4><span id='gameConsole'>เริ่มกันเลย !!</span></h4>
+    </div>
+    <div id="gameBoard" ></div>
 </body>
 </html>
